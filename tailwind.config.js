@@ -9,6 +9,9 @@ export default {
       "Raleway": ["Raleway", "sans-serif"]
     },
     extend: {
+      spacing: {
+        'max-width': '1324px',
+      },
       colors: {
         'BackgroundColor': '#fff3e0',
       },
