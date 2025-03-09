@@ -1,9 +1,10 @@
 import React from "react";
+import banner from "/public/banner_image.svg";
 
 const Hero = () => {
   return (
     <div className="bg-BackgroundColor">
-      <div className="max-w-max-width mx-auto pt-40 pb-20">
+      <div className="max-w-max-width mx-auto pt-40 pb-20 flex justify-between items-center">
         {/* ---------- Heading ---------- */}
         <div className="w-2/5">
           <h1 className="font-Raleway text-5xl">
@@ -18,7 +19,9 @@ const Hero = () => {
           </button>
         </div>
         {/* ---------- Banner Image ---------- */}
-        <div className="w-3/5"></div>
+        <div className="w-3/5">
+          <img src={banner} alt="" />
+        </div>
       </div>
     </div>
   );
