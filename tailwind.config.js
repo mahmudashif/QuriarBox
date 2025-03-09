@@ -15,6 +15,7 @@ export default {
       },
       colors: {
         'BackgroundColor': '#fff3e0',
+        'BasicOrange': '#F95C19'
       },
     },
   },
