@@ -3,11 +3,14 @@ import SearchIcon from "/public/Searchicon.svg";
 import Logo from "/public/TypographyLogo.svg";
 
 const Navbar = () => {
+  {
+    /* ---------- Navbar Items -------- */
+  }
   const navItems = [
     { name: "Home", path: "/" },
-    { name: "About", path: "/about" },
-    { name: "Services", path: "/services" },
-    { name: "Contact", path: "/contact" },
+    { name: "Our services", path: "/services" },
+    { name: "About Us", path: "/aboutus" },
+    { name: "What's new?", path: "/whatsnew" },
   ];
   return (
     <div className="max-w-max-width mx-auto py-5">
