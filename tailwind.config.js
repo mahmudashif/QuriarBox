@@ -6,7 +6,8 @@ export default {
   ],
   theme: {
     fontFamily: {
-      "Raleway": ["Raleway", "sans-serif"]
+      "Raleway": ["Raleway", "sans-serif"],
+      "Oxanium": ["Oxanium", "sans-serif"],
     },
     extend: {
       spacing: {
