@@ -13,7 +13,7 @@ const Services = () => {
             Our services for you
           </h3>
         </div>
-        <div>{/* <OfferCard /> */}</div>
+        {/* <div><OfferCard /></div> */}
       </div>
     </div>
   );
