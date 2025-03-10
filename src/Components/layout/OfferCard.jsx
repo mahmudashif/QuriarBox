@@ -14,7 +14,7 @@ const OfferCard = () => {
             <h2 className="text-xl font-bold font-Raleway text-[#464558] text-center mt-4">
               {card.title}
             </h2>
-            <p className="text-[#7B7A8B] mt-4 font-Raleway text-lg">
+            <p className="text-[#7B7A8B] mt-4 font-Raleway text-lg h-32">
               {card.description}
             </p>
             <ul className="mt-4 list-disc list-inside text-[#7B7A8B] font-Raleway">
