@@ -8,19 +8,23 @@ const OfferCard = () => {
         {cardData.map((card) => (
           <div
             key={card.id}
-            className="bg-gradient-to-r from-blue-500 to-purple-600 text-white p-6 w-[30%] rounded-lg shadow-lg"
+            className="bg-gradient-to-r from-[#fff7e7]-500 to-[#fff1dc]-600 text-white py-16 pl-10 pr-10 w-[30%] rounded-lg shadow-lg"
           >
             <img src={card.image} alt={card.title} className="mx-auto" />
-            <h2 className="text-xl font-bold text-center mt-4">{card.title}</h2>
-            <p className="text-center mt-2">{card.description}</p>
-            <ul className="mt-4 list-disc list-inside text-red-400">
+            <h2 className="text-xl font-bold font-Raleway text-[#464558] text-center mt-4">
+              {card.title}
+            </h2>
+            <p className="text-[#7B7A8B] mt-4 font-Raleway text-lg">
+              {card.description}
+            </p>
+            <ul className="mt-4 list-disc list-inside text-[#7B7A8B] font-Raleway">
               {card.features.map((feature, index) => (
-                <li key={index} className="text-white">
+                <li key={index} className="">
                   {feature}
                 </li>
               ))}
             </ul>
-            <button className="mt-4 bg-white text-blue-600 px-4 py-2 rounded-md font-semibold block mx-auto hover:bg-gray-200">
+            <button className="mt-10 px-24 text-[#F95C19] border-[2px] text-xl font-Oxanium border-[#F95C19] py-4 rounded-lg font-bold block mx-auto hover:bg-[#F95C19] hover:text-white">
               Learn More
             </button>
           </div>
