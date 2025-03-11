@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import award from "/public/Award.svg";
+import statesCovered from "/public/state.svg";
 
 const Counter = () => {
   const [count, setCount] = useState(0);
@@ -13,11 +14,30 @@ const Counter = () => {
   }, [count]);
   return (
     <div className="bg-BackgroundColor pt-20 pb-10">
-      <div className="max-w-max-width mx-auto">
-        <div>
-          <img src={award} alt="Award" />
-          <p>{count}+</p>
-          <p>Awards won</p>
+      <div className="max-w-max-width mx-auto flex justify-between items-center">
+        {/* ---------- Award Won counter ---------- */}
+        <div className="w-[15%] text-center">
+          <div className="flex justify-center">
+            <img src={award} alt="Award" />
+          </div>
+          <p className="text-BasicOrange font-bold text-4xl font-Raleway mt-2">
+            {count}+
+          </p>
+          <p className="text-BasicGray text-xl font-semibold font-Raleway mt-2">
+            Awards won
+          </p>
+        </div>
+        {/* ---------- State cover counter ---------- */}
+        <div className="w-[15%] text-center">
+          <div className="flex justify-center">
+            <img src={statesCovered} alt="statesCovered" />
+          </div>
+          <p className="text-BasicOrange font-bold text-4xl font-Raleway mt-2">
+            {count}+
+          </p>
+          <p className="text-BasicGray text-xl font-semibold font-Raleway mt-2">
+            States covered
+          </p>
         </div>
       </div>
     </div>
@@ -25,32 +45,3 @@ const Counter = () => {
 };
 
 export default Counter;
-
-// import React, { useEffect, useState } from "react";
-
-// const Counter = () => {
-//   const [count, setCount] = useState(0);
-
-//   useEffect(() => {
-//     if (count < 25) {
-//       const interval = setInterval(() => {
-//         setCount((prevCount) => prevCount + 1);
-//       }, 20); // Increment every 200ms
-
-//       return () => clearInterval(interval);
-//     }
-//   }, [count]);
-
-//   return (
-//     <div className="bg-BackgroundColor pt-20 pb-10">
-//       <div className="max-w-max-width mx-auto">
-//         <div className="bg-white p-6 rounded-lg shadow-lg text-center">
-//           <h1 className="text-2xl font-bold mb-4">Counter</h1>
-//           <p className="text-4xl font-semibold text-blue-600">{count}</p>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Counter;
