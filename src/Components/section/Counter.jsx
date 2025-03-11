@@ -7,7 +7,7 @@ const Counter = () => {
     if (count < 26) {
       const interval = setInterval(() => {
         setCount((prevCount) => prevCount + 1);
-      }, 20);
+      }, 200);
       return () => clearInterval(interval);
     }
   }, [count]);
