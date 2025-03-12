@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./Components/layout/Footer";
 import Navbar from "./Components/layout/Navbar";
 import OfferCard from "./Components/layout/OfferCard";
 import Counter from "./Components/section/Counter";
@@ -15,6 +16,7 @@ const App = () => {
       <OfferCard />
       <Counter />
       <Testimonial />
+      <Footer />
       {/* <Footer /> */}
     </div>
   );

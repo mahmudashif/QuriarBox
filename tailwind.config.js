@@ -17,6 +17,8 @@ export default {
         'BackgroundColor': '#fff3e0',
         'BasicOrange': '#F95C19',
         'BasicGray': '#464558',
+        'footerPrimary' : '#222132',
+        'footerSecondary' : '#2f2e41',
       },
     },
   },
