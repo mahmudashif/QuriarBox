@@ -4,6 +4,7 @@ import OfferCard from "./Components/layout/OfferCard";
 import Counter from "./Components/section/Counter";
 import Hero from "./Components/section/Hero";
 import Services from "./Components/section/Services";
+import Testimonial from "./Components/section/Testimonial";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Services />
       <OfferCard />
       <Counter />
+      <Testimonial />
       {/* <Footer /> */}
     </div>
   );
