@@ -48,10 +48,10 @@ const Counter = () => {
             <img src={happyClient} alt="statesCovered" />
           </div>
           <p className="text-BasicOrange font-bold text-4xl font-Raleway mt-2">
-            {count}+
+            {count}K+
           </p>
           <p className="text-BasicGray text-xl font-semibold font-Raleway mt-2">
-            States covered
+            Happy clients
           </p>
         </div>
         {/* ---------- Goods Delivered counter ---------- */}
@@ -60,10 +60,10 @@ const Counter = () => {
             <img src={goodsDelivered} alt="statesCovered" />
           </div>
           <p className="text-BasicOrange font-bold text-4xl font-Raleway mt-2">
-            {count}+
+            {count}M+
           </p>
           <p className="text-BasicGray text-xl font-semibold font-Raleway mt-2">
-            States covered
+            Goods delivered
           </p>
         </div>
         {/* ---------- Business hours counter ---------- */}
@@ -72,10 +72,10 @@ const Counter = () => {
             <img src={businessHours} alt="statesCovered" />
           </div>
           <p className="text-BasicOrange font-bold text-4xl font-Raleway mt-2">
-            {count}+
+            {count}M+
           </p>
           <p className="text-BasicGray text-xl font-semibold font-Raleway mt-2">
-            States covered
+            Business hours
           </p>
         </div>
       </div>
