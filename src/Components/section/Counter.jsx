@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import award from "/public/Award.svg";
 import happyClient from "/public/client.svg";
 import statesCovered from "/public/state.svg";
+import goodsDelivered from "/public/transport.svg";
 
 const Counter = () => {
   const [count, setCount] = useState(0);
@@ -52,10 +53,10 @@ const Counter = () => {
             States covered
           </p>
         </div>
-        {/* ---------- State cover counter ---------- */}
+        {/* ---------- Goods Delivered counter ---------- */}
         <div className="w-[15%] text-center">
           <div className="flex justify-center">
-            <img src={statesCovered} alt="statesCovered" />
+            <img src={goodsDelivered} alt="statesCovered" />
           </div>
           <p className="text-BasicOrange font-bold text-4xl font-Raleway mt-2">
             {count}+
