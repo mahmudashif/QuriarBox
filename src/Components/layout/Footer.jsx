@@ -27,6 +27,22 @@ const Footer = () => {
           </button>
         </div>
       </div>
+      {/* ---------- Footer second layer ---------- */}
+      <div className="bg-footerSecondary mt-20">
+        <div className="max-w-max-width mx-auto">
+          <div>
+            <img src="/public/TypographyLogo.svg" alt="logo" />
+          </div>
+          <p>
+            The most trusted Courier
+            <br />
+            company in your area.
+          </p>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </div>
   );
 };
