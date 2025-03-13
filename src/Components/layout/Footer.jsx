@@ -29,19 +29,30 @@ const Footer = () => {
       </div>
       {/* ---------- Footer second layer ---------- */}
       <div className="bg-footerSecondary mt-20">
-        <div className="max-w-max-width mx-auto">
-          <div>
-            <img src="/public/TypographyLogo.svg" alt="logo" />
+        <div className="max-w-max-width mx-auto py-16 flex">
+          <div className="w-1/2">
+            <div>
+              <img src="/public/TypographyLogo.svg" alt="logo" />
+            </div>
+            <p className="mt-3 text-[#9291A1] font-Raleway text-lg">
+              The most trusted Courier
+              <br />
+              company in your area.
+            </p>
           </div>
-          <p>
-            The most trusted Courier
-            <br />
-            company in your area.
-          </p>
+          <div className="w-1/2">
+            <div>
+              <h3 className="text-white font-Oxanium">Other links</h3>
+              <ul className="text-[#9291A1] mt-5 space-y-2 font-Oxanium">
+                <li>Blogs</li>
+                <li>Movers website</li>
+                <li>Traffic Update</li>
+              </ul>
+            </div>
+            <div></div>
+            <div></div>
+          </div>
         </div>
-        <div></div>
-        <div></div>
-        <div></div>
       </div>
     </div>
   );
