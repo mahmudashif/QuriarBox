@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="bg-footerPrimary pt-20 pb-20">
+    <div className="bg-footerPrimary pt-20 pb-10">
       <div className="max-w-max-width mx-auto flex justify-between items-center">
         <div className="text-white">
           <h4 className="font-Raleway font-bold text-4xl pb-5">
@@ -29,7 +29,7 @@ const Footer = () => {
       </div>
       {/* ---------- Footer second layer ---------- */}
       <div className="bg-footerSecondary mt-20">
-        <div className="max-w-max-width mx-auto py-16 flex">
+        <div className="max-w-max-width mx-auto py-16 flex items-center">
           <div className="w-1/2">
             <div>
               <img src="/public/TypographyLogo.svg" alt="logo" />
@@ -40,7 +40,7 @@ const Footer = () => {
               company in your area.
             </p>
           </div>
-          <div className="w-1/2">
+          <div className="w-1/2 flex justify-between">
             <div>
               <h3 className="text-white font-Oxanium">Other links</h3>
               <ul className="text-[#9291A1] mt-5 space-y-2 font-Oxanium">
@@ -49,9 +49,33 @@ const Footer = () => {
                 <li>Traffic Update</li>
               </ul>
             </div>
-            <div></div>
-            <div></div>
+            <div>
+              <h3 className="text-white font-Oxanium">Services</h3>
+              <ul className="text-[#9291A1] mt-5 space-y-2 font-Oxanium">
+                <li>Corporate goods</li>
+                <li>Artworks</li>
+                <li>Documents</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-white font-Oxanium">Customer Care</h3>
+              <ul className="text-[#9291A1] mt-5 space-y-2 font-Oxanium">
+                <li>About Us</li>
+                <li>Contact US</li>
+                <li>Get Update</li>
+              </ul>
+            </div>
           </div>
+        </div>
+      </div>
+      {/* ---------- Footer third layer ---------- */}
+      <div>
+        <div className="max-w-max-width mx-auto flex justify-between text-[#DBDBE9] mt-10 font-Raleway">
+          <p>All rights Reserved © Your Company, 2021</p>
+          <p>
+            Made with heart by{" "}
+            <span className="text-BasicOrange font-bold">ThemeWagon</span>
+          </p>
         </div>
       </div>
     </div>
