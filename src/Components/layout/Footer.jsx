@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "/public/TypographyLogo.svg";
 
 const Footer = () => {
   return (
@@ -32,7 +33,7 @@ const Footer = () => {
         <div className="max-w-max-width mx-auto py-16 flex items-center">
           <div className="w-1/2">
             <div>
-              <img src="/public/TypographyLogo.svg" alt="logo" />
+              <img src={logo} alt="logo" />
             </div>
             <p className="mt-3 text-[#9291A1] font-Raleway text-lg">
               The most trusted Courier
