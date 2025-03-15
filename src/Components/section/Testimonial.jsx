@@ -40,7 +40,7 @@ const Testimonial = () => {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-[#fff6e6] w-[872px] p-6 rounded-2xl shadow-md space-y-10"
+              className="bg-[#fff6e6] w-[872px] p-6 rounded-2xl shadow-md space-y-10 mx-auto"
             >
               <p className="text-lg font-semibold text-gray-800">
                 {testimonial.name}
