@@ -3,6 +3,7 @@ import Footer from "./Components/layout/Footer";
 import Navbar from "./Components/layout/Navbar";
 import OfferCard from "./Components/layout/OfferCard";
 import Counter from "./Components/section/Counter";
+import FindUs from "./Components/section/FindUs";
 import Form from "./Components/section/Form";
 import Hero from "./Components/section/Hero";
 import Services from "./Components/section/Services";
@@ -18,6 +19,7 @@ const App = () => {
       <Counter />
       <Testimonial />
       <Form />
+      <FindUs />
       <Footer />
       {/* <Footer /> */}
     </div>

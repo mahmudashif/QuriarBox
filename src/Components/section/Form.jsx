@@ -3,7 +3,7 @@ import ladisIcon from "/public/Illustration.svg";
 
 const Form = () => {
   return (
-    <div className="bg-BackgroundColor pt-10 pb-10">
+    <div className="bg-BackgroundColor pt-48 pb-20">
       <div className="max-w-max-width mx-auto flex items-center justify-between">
         <div className="w-1/2">
           <div className="flex justify-center mb-5">
