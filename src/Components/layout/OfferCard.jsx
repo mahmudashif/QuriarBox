@@ -1,5 +1,5 @@
 import React from "react";
-import cardData from "./CardItem.js";
+import cardData from "./CardItem.jsx";
 
 const OfferCard = () => {
   return (
