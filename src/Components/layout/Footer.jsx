@@ -23,14 +23,14 @@ const Footer = () => {
             placeholder="Enter your mail"
             className="flex-1 bg-transparent border border-gray-500 rounded-md px-4 py-4 text-white outline-none w-[386px] mt-5"
           />
-          <button className="bg-[#F26522] text-white font-bold px-6 py-4 rounded-md ml-2 font-Oxanium transition duration-300 hover:bg-orange-600 hover:scale-105">
+          <button className="bg-[#F26522] text-white font-bold px-6 py-4 rounded-md ml-2 font-Oxanium">
             Subscribe
           </button>
         </div>
       </div>
       {/* ---------- Footer second layer ---------- */}
       <div className="bg-footerSecondary mt-20">
-        <div className="max-w-max-width mx-auto py-16 flex items-center">
+        <div className="max-w-max-width mx-auto py-16 lg:flex max-lg:ml-10 items-center">
           <div className="w-1/2">
             <div>
               <img src={logo} alt="logo" />
@@ -41,7 +41,7 @@ const Footer = () => {
               company in your area.
             </p>
           </div>
-          <div className="w-1/2 flex justify-between">
+          <div className="w-1/2 lg:flex max-lg:space-y-10 max-lg:mt-10 justify-between">
             <div>
               <h3 className="text-white font-Oxanium">Other links</h3>
               <ul className="text-[#9291A1] mt-5 space-y-2 font-Oxanium">

@@ -23,7 +23,6 @@ const App = () => {
       <Form />
       <FindUs />
       <Footer />
-      {/* <Footer /> */}
     </div>
   );
 };
