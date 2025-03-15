@@ -1,4 +1,6 @@
 import offer1 from "/public/Offer1.svg";
+import offer2 from "/public/Offer2.svg";
+import offer3 from "/public/Offer3.svg";
 
 const cardData = [
   {
@@ -11,7 +13,7 @@ const cardData = [
   },
   {
     id: 2,
-    image: "/public/Offer2.svg",
+    image: offer2,
     title: "Statewide Services",
     description:
       "Offering home delivery around the city, where your products will be at your doorstep within 48-72 hours.",
@@ -19,7 +21,7 @@ const cardData = [
   },
   {
     id: 3,
-    image: "/public/Offer3.svg",
+    image: offer3,
     title: "Personal Services",
     description:
       "You can trust us to safely deliver your most sensitive documents to the specific area in a short time.",
