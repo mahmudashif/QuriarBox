@@ -48,12 +48,12 @@ const PlayVideo = () => {
 
               {/* Text below play button */}
               <div className="text-center max-w-lg px-4">
-                <h3 className="text-white text-2xl font-bold mb-2">
-                  Watch Our Story
+                <h3 className="text-BasicOrange text-4xl font-bold mb-2 font-Oxanium">
+                  FASTEST DELIVERY
                 </h3>
-                <p className="text-white/90 text-lg">
-                  Learn how we've been delivering excellence across the nation
-                  for over a decade
+                <p className="text-white/90 text-lg font-Raleway">
+                  You can get your valuable item in the fastest period of time
+                  with safety. Because your emergency is our first priority.
                 </p>
               </div>
             </div>
