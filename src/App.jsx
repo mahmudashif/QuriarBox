@@ -6,6 +6,7 @@ import Counter from "./Components/section/Counter";
 import FindUs from "./Components/section/FindUs";
 import Form from "./Components/section/Form";
 import Hero from "./Components/section/Hero";
+import PlayVideo from "./Components/section/PlayVideo";
 import Services from "./Components/section/Services";
 import Testimonial from "./Components/section/Testimonial";
 
@@ -17,6 +18,7 @@ const App = () => {
       <Services />
       <OfferCard />
       <Counter />
+      <PlayVideo />
       <Testimonial />
       <Form />
       <FindUs />
