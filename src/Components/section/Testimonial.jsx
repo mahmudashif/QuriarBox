@@ -2,7 +2,6 @@ import React from "react";
 import ProfileIcon1 from "/public/profileIcon1.svg";
 
 const Testimonial = () => {
-  // Sample testimonial data - you can expand this array for more testimonials
   const testimonials = [
     {
       id: 1,
@@ -36,12 +35,11 @@ const Testimonial = () => {
     },
   ];
 
-  // Function to render stars based on rating
   const renderStars = (rating) => {
     return Array.from({ length: 5 }).map((_, index) => (
       <svg
         key={index}
-        className={`w-6 h-6 ${
+        className={`w-5 h-5 md:w-6 md:h-6 ${
           index < rating ? "text-[#FF5722]" : "text-gray-300"
         } fill-current`}
         viewBox="0 0 24 24"
@@ -52,53 +50,51 @@ const Testimonial = () => {
   };
 
   return (
-    <div className="bg-BackgroundColor pt-10 pb-10">
-      <div className="max-w-max-width mx-auto px-4">
-        <div className="text-center mb-12">
-          <h3 className="font-bold font-Oxanium text-3xl text-BasicOrange uppercase">
+    <div className="bg-BackgroundColor pt-6 md:pt-8 lg:pt-10 pb-10 px-4 md:px-6">
+      <div className="max-w-6xl mx-auto">
+        {/* Section Title */}
+        <div className="text-center mb-8 md:mb-10 lg:mb-12">
+          <h3 className="font-bold font-Oxanium text-xl md:text-2xl lg:text-3xl text-BasicOrange uppercase">
             testimonial
           </h3>
-          <h2 className="font-Raleway text-BasicGray text-[40px] capitalize pt-2">
+          <h2 className="font-Raleway text-BasicGray text-2xl md:text-[30px] lg:text-[40px] capitalize pt-2">
             our awesome clients
           </h2>
         </div>
 
-        {/*---------- Testimonial Cards ----------*/}
-        <div className="w-[872px] mx-auto space-y-16">
+        {/* Testimonial Cards */}
+        <div className="max-w-[872px] mx-auto space-y-8">
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.id}
-              className="relative bg-[#fff6e6] rounded-3xl p-8 shadow-[0_0_20px_rgba(0,0,255,0.1)] transition-transform duration-300 hover:-translate-y-2"
+              className="relative bg-[#fff6e6] rounded-3xl p-6 md:p-8 shadow-[0_0_20px_rgba(0,0,255,0.1)] transition-transform duration-300 hover:-translate-y-2"
             >
-              {/* Blue glow effect */}
+              {/* Blue Glow Effect */}
               <div className="absolute inset-0 rounded-3xl bg-blue-600/5 blur-xl -z-10"></div>
 
               {/* Content */}
-              <h2 className="text-[#FF5722] text-2xl font-bold mb-4">
+              <h2 className="text-[#FF5722] text-xl md:text-2xl font-bold mb-4">
                 {testimonial.title}
               </h2>
-
-              <p className="text-gray-700 mb-6 leading-relaxed line-clamp-6">
+              <p className="text-gray-700 mb-4 leading-relaxed line-clamp-6 text-sm md:text-base">
                 {testimonial.content}
               </p>
 
-              {/* Rating Stars */}
-
-              {/* Author Info */}
-              <div className="justify-between items-center flex">
-                <div className="flex mb-4">
-                  {renderStars(testimonial.rating)}
-                </div>
-                <div className="flex gap-x-5">
+              {/* Rating and Author Info */}
+              <div className="flex justify-between items-center">
+                <div className="flex">{renderStars(testimonial.rating)}</div>
+                <div className="flex gap-x-4 items-center">
                   <div>
-                    <h3 className="text-gray-900 font-bold">
+                    <h3 className="text-gray-900 font-bold text-sm md:text-base">
                       {testimonial.author}
                     </h3>
-                    <p className="text-gray-600">{testimonial.position}</p>
+                    <p className="text-gray-600 text-xs md:text-sm">
+                      {testimonial.position}
+                    </p>
                   </div>
 
                   {/* Profile Image */}
-                  <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-white shadow-lg">
+                  <div className="w-10 h-10 md:w-12 md:h-12 rounded-full overflow-hidden border-2 border-white shadow-lg">
                     <img
                       src={testimonial.image || "/placeholder.svg"}
                       alt={testimonial.author}
