@@ -22,7 +22,7 @@ const Testimonial = () => {
       rating: 5,
       author: "Sarah Johnson",
       position: "Marketing Director, ABC Corp",
-      image: "https://randomuser.me/api/portraits/women/44.jpg",
+      image: ProfileIcon1,
     },
     {
       id: 3,
@@ -32,7 +32,7 @@ const Testimonial = () => {
       rating: 4,
       author: "Michael Chen",
       position: "Operations Manager, Tech Solutions",
-      image: "https://randomuser.me/api/portraits/men/67.jpg",
+      image: ProfileIcon1,
     },
   ];
 
@@ -64,11 +64,11 @@ const Testimonial = () => {
         </div>
 
         {/*---------- Testimonial Cards ----------*/}
-        <div className="">
+        <div className="w-[872px] mx-auto space-y-16">
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.id}
-              className="relative bg-[#FFF8F0] rounded-3xl p-8 shadow-[0_0_20px_rgba(0,0,255,0.1)] transition-transform duration-300 hover:-translate-y-2"
+              className="relative bg-[#fff6e6] rounded-3xl p-8 shadow-[0_0_20px_rgba(0,0,255,0.1)] transition-transform duration-300 hover:-translate-y-2"
             >
               {/* Blue glow effect */}
               <div className="absolute inset-0 rounded-3xl bg-blue-600/5 blur-xl -z-10"></div>
@@ -83,24 +83,28 @@ const Testimonial = () => {
               </p>
 
               {/* Rating Stars */}
-              <div className="flex mb-4">{renderStars(testimonial.rating)}</div>
 
               {/* Author Info */}
-              <div className="flex justify-between items-center">
-                <div>
-                  <h3 className="text-gray-900 font-bold">
-                    {testimonial.author}
-                  </h3>
-                  <p className="text-gray-600">{testimonial.position}</p>
+              <div className="justify-between items-center flex">
+                <div className="flex mb-4">
+                  {renderStars(testimonial.rating)}
                 </div>
+                <div className="flex gap-x-5">
+                  <div>
+                    <h3 className="text-gray-900 font-bold">
+                      {testimonial.author}
+                    </h3>
+                    <p className="text-gray-600">{testimonial.position}</p>
+                  </div>
 
-                {/* Profile Image */}
-                <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-white shadow-lg">
-                  <img
-                    src={testimonial.image || "/placeholder.svg"}
-                    alt={testimonial.author}
-                    className="w-full h-full object-cover"
-                  />
+                  {/* Profile Image */}
+                  <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-white shadow-lg">
+                    <img
+                      src={testimonial.image || "/placeholder.svg"}
+                      alt={testimonial.author}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
