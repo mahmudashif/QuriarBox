@@ -8,26 +8,22 @@ import statesCovered from "/public/state.svg";
 import goodsDelivered from "/public/transport.svg";
 
 const Counter = () => {
-  // Individual state for each counter
   const [awardsCount, setAwardsCount] = useState(0);
   const [statesCount, setStatesCount] = useState(0);
   const [clientsCount, setClientsCount] = useState(0);
   const [goodsCount, setGoodsCount] = useState(0);
   const [hoursCount, setHoursCount] = useState(0);
 
-  // Target values for each counter
   const targetValues = {
     awards: 26,
     states: 48,
-    clients: 25, // Will display as 25K+
-    goods: 10, // Will display as 10M+
-    hours: 15, // Will display as 15M+
+    clients: 25,
+    goods: 10,
+    hours: 15,
   };
 
-  // Animation speed (in milliseconds)
   const animationSpeed = 100;
 
-  // Awards counter
   useEffect(() => {
     if (awardsCount < targetValues.awards) {
       const interval = setInterval(() => {
@@ -37,7 +33,6 @@ const Counter = () => {
     }
   }, [awardsCount]);
 
-  // States counter
   useEffect(() => {
     if (statesCount < targetValues.states) {
       const interval = setInterval(() => {
@@ -47,7 +42,6 @@ const Counter = () => {
     }
   }, [statesCount]);
 
-  // Clients counter
   useEffect(() => {
     if (clientsCount < targetValues.clients) {
       const interval = setInterval(() => {
@@ -57,7 +51,6 @@ const Counter = () => {
     }
   }, [clientsCount]);
 
-  // Goods counter
   useEffect(() => {
     if (goodsCount < targetValues.goods) {
       const interval = setInterval(() => {
@@ -67,7 +60,6 @@ const Counter = () => {
     }
   }, [goodsCount]);
 
-  // Hours counter
   useEffect(() => {
     if (hoursCount < targetValues.hours) {
       const interval = setInterval(() => {
@@ -79,80 +71,53 @@ const Counter = () => {
 
   return (
     <div className="bg-BackgroundColor pt-20 pb-10">
-      <div className="max-w-max-width mx-auto flex flex-wrap justify-between items-center">
-        {/* ---------- Award Won counter ---------- */}
-        <div className="w-[15%] text-center">
-          <div className="flex justify-center">
-            <img src={award || "/placeholder.svg"} alt="Award" />
-          </div>
-          <p className="text-BasicOrange font-bold text-4xl font-Raleway mt-2">
-            {awardsCount}+
-          </p>
-          <p className="text-BasicGray text-xl font-semibold font-Raleway mt-2">
-            Awards won
-          </p>
-        </div>
-
-        {/* ---------- State cover counter ---------- */}
-        <div className="w-[15%] text-center">
-          <div className="flex justify-center">
+      <div className="max-w-max-width mx-auto flex flex-wrap justify-center md:justify-between gap-6">
+        {/* Counter Items */}
+        {[
+          { img: award, count: awardsCount, suffix: "+", label: "Awards won" },
+          {
+            img: statesCovered,
+            count: statesCount,
+            suffix: "+",
+            label: "States covered",
+          },
+          {
+            img: happyClient,
+            count: clientsCount,
+            suffix: "K+",
+            label: "Happy clients",
+          },
+          {
+            img: goodsDelivered,
+            count: goodsCount,
+            suffix: "M+",
+            label: "Goods delivered",
+          },
+          {
+            img: businessHours,
+            count: hoursCount,
+            suffix: "M+",
+            label: "Business hours",
+          },
+        ].map((item, index) => (
+          <div
+            key={index}
+            className="w-[15%] min-w-[180px] max-w-[200px] text-center flex flex-col items-center"
+          >
             <img
-              src={statesCovered || "/placeholder.svg"}
-              alt="statesCovered"
+              src={item.img || "/placeholder.svg"}
+              alt={item.label}
+              className="w-16 h-16"
             />
+            <p className="text-BasicOrange font-bold text-4xl font-Raleway mt-2">
+              {item.count}
+              {item.suffix}
+            </p>
+            <p className="text-BasicGray text-xl font-semibold font-Raleway mt-2">
+              {item.label}
+            </p>
           </div>
-          <p className="text-BasicOrange font-bold text-4xl font-Raleway mt-2">
-            {statesCount}+
-          </p>
-          <p className="text-BasicGray text-xl font-semibold font-Raleway mt-2">
-            States covered
-          </p>
-        </div>
-
-        {/* ---------- Happy Client counter ---------- */}
-        <div className="w-[15%] text-center">
-          <div className="flex justify-center">
-            <img src={happyClient || "/placeholder.svg"} alt="statesCovered" />
-          </div>
-          <p className="text-BasicOrange font-bold text-4xl font-Raleway mt-2">
-            {clientsCount}K+
-          </p>
-          <p className="text-BasicGray text-xl font-semibold font-Raleway mt-2">
-            Happy clients
-          </p>
-        </div>
-
-        {/* ---------- Goods Delivered counter ---------- */}
-        <div className="w-[15%] text-center">
-          <div className="flex justify-center">
-            <img
-              src={goodsDelivered || "/placeholder.svg"}
-              alt="statesCovered"
-            />
-          </div>
-          <p className="text-BasicOrange font-bold text-4xl font-Raleway mt-2">
-            {goodsCount}M+
-          </p>
-          <p className="text-BasicGray text-xl font-semibold font-Raleway mt-2">
-            Goods delivered
-          </p>
-        </div>
-
-        {/* ---------- Business hours counter ---------- */}
-        <div className="w-[15%] text-center">
-          <div className="flex justify-center">
-            <img
-              src={businessHours || "/placeholder.svg"}
-              alt="statesCovered"
-            />
-          </div>
-          <p className="text-BasicOrange font-bold text-4xl font-Raleway mt-2">
-            {hoursCount}M+
-          </p>
-          <p className="text-BasicGray text-xl font-semibold font-Raleway mt-2">
-            Business hours
-          </p>
-        </div>
+        ))}
       </div>
     </div>
   );
