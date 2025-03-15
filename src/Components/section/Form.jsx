@@ -21,11 +21,20 @@ const Form = () => {
             </p>
           </div>
         </div>
-        <div className="w-1/2">
+        <div className="w-1/2 space-y-4">
           <input
             type="text"
             placeholder="Name"
-            className="bg-transparent border-[2px] border-[#C5C5D2] rounded-md"
+            className="bg-transparent border-[2px] border-[#C5C5D2] rounded-md w-[429px] px-6 py-4 font-Raleway"
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            className="bg-transparent border-[2px] border-[#C5C5D2] rounded-md w-[429px] px-6 py-4 font-Raleway"
+          />
+          <textarea
+            placeholder="Message"
+            className="bg-transparent border-[2px] border-[#C5C5D2] rounded-md w-[429px] px-6 pt-4 pb-36 font-Raleway"
           />
         </div>
       </div>
