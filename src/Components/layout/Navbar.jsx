@@ -37,7 +37,7 @@ const Navbar = () => {
               <img src={SearchIcon} alt="" />
             </button>
             {/* ---------- Contact Us Button -------- */}
-            <button className="bg-[#ffe4d9] py-3 px-5 ml-4 font-Raleway font-bold text-red-700 rounded-xl">
+            <button className="bg-[#ffe4d9] py-3 px-5 ml-4 font-Raleway font-bold text-red-700 rounded-xl transition duration-300 hover:bg-red-500 hover:text-white hover:scale-105">
               Contact us
             </button>
           </div>
