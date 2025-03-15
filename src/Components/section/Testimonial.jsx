@@ -9,7 +9,7 @@ const Testimonial = () => {
     {
       name: "John Doe",
       review: "Excellent service and great experience!",
-      rating: 5,
+      rating: 4,
     },
     {
       name: "Jane Smith",
@@ -35,12 +35,12 @@ const Testimonial = () => {
           </h2>
         </div>
 
-        {/* Testimonial Cards */}
-        <div className="mt-10 flex flex-wrap justify-center gap-8">
+        {/*---------- Testimonial Cards ----------*/}
+        <div className="mt-10 space-y-16">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-white p-6 rounded-2xl shadow-md max-w-sm"
+              className="bg-[#fff6e6] w-[872px] p-6 rounded-2xl shadow-md space-y-10"
             >
               <p className="text-lg font-semibold text-gray-800">
                 {testimonial.name}
